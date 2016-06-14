@@ -10,6 +10,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
         <h1>Welcome!</h1>
-        <img src="Assets/Logo.png" />
+        <img src="Assets/Logo.png" width="200"/>
     </div>
 </asp:Content>
