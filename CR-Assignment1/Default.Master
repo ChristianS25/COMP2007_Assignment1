@@ -22,17 +22,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-        <footer class="footer navbar-fixed-bottom bg-info">
-            <div class="container">
-                <p class="text-muted">&copy; 2016 CR Productions</p>
-            </div>
-        </footer>
-    </form>
-
   <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -58,10 +47,19 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-
-
-</nav>
-    
-   
+  </nav>  
+      <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer class="footer navbar-fixed-bottom bg-info">
+            <div class="container">
+                <p class="text-muted">&copy; 2016 CR Productions</p>
+            </div>
+        </footer>
+</form>    
+<!--JAVASCRIPT STUFF-->
+<script src="scripts/jquery-1.9.1.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
 </body>
 </html>
