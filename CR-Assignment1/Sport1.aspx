@@ -9,11 +9,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
         <div class="col-md-10 col-md-offset-2">
-            <img src="Assets/overwatch.png" />
+            <img src="/Assets/overwatch.png" />
         </div>
         
         <div class="col-md-2 well">
-            <img src="Assets/cloud9.png" width="150"/>
+            <img src="/Assets/cloud9.png" width="150"/>
         </div>
 
         <div class="col-md-6 col-md-offset-1 well">
@@ -49,7 +49,7 @@
 
     <div class="container">
         <div class="col-md-2 pull-left  well">
-            <img src="Assets/luminosity.png" width="150"/>
+            <img src="/Assets/luminosity.png" width="150"/>
         </div>
 
         <div class="col-md-6 col-md-offset-1 well">
