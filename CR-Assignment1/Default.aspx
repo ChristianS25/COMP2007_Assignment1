@@ -30,10 +30,10 @@
         <div class="panel-heading">Games Curently being tracked</div>
                 <!-- List group -->
                 <ul class="list-group">
-                    <li class="list-group-item">Overwatch</li>
-                    <li class="list-group-item">Heroes of the Storm</li>
-                    <li class="list-group-item">League of Legends</li>
-                    <li class="list-group-item">Counter Strike: Global Offensive</li>
+                    <li class="list-group-item"><a href="Sport1.aspx">Overwatch</a>- A 6v6 FPS with many heroes made by Blizzard</li>
+                    <li class="list-group-item"><a href="Sport4.aspx">Heroes of the Storm</a>- A 5v5 MOBA with many Heroes made by Blizzard</li>
+                    <li class="list-group-item"><a href="Sport3.aspx">League of Legends</a>- A 5v5 MOBA with many heroes made by RIOT</li>
+                    <li class="list-group-item"><a href="Sport2.aspx">Counter Strike: Global Offensive</a>- A 6v6 heavily team based FPS made by Valve</li>
                 </ul>
             </div> 
         </div>
