@@ -44,10 +44,12 @@ namespace CR_Assignment1
                 // query the Students Table using EF and LINQ
                 var Students = (from allStudents in db.teams
                                 select allStudents);
-
+                
                 // bind the result to the GridView
                 teamsGridView.DataSource = Students.AsQueryable().ToList();
                 teamsGridView.DataBind();
+                //teamsGridView1.DataSource = Students.AsQueryable().ToList();
+                //teamsGridView1.DataBind();
             }
         }
 
