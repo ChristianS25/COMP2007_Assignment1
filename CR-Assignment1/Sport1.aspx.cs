@@ -22,7 +22,7 @@ namespace CR_Assignment1
                 Session["SortColumn"] = "StudentID"; // default sort column
                 Session["SortDirection"] = "ASC";
                 // Get the student data
-                this.GetStudents();
+                this.GetTeams();
             }
         }
 
@@ -34,82 +34,61 @@ namespace CR_Assignment1
          * @method GetStudents
          * @returns {void}
          */
-        protected void GetStudents()
+        protected void GetTeams()
         {
             // connect to EF
             using (DefaultConnection db = new DefaultConnection())
             {
                 string SortString = Session["SortColumn"].ToString() + " " + Session["SortDirection"].ToString();
 
+
+                // query the Teams Table using EF and LINQ
+                var Teams = (from allTeams in db.teams
+                             where allTeams.team_id == 1
+                             select allTeams);
+
+                var Teams2 = (from allTeams in db.teams
+                              where allTeams.team_id == 2
+                              select allTeams);
+
+                // bind the result to the GridView
+                GridView1.DataSource = Teams.AsQueryable().ToList();
+                GridView1.DataBind();
+                GridView2.DataSource = Teams.AsQueryable().ToList();
+                GridView2.DataBind();
+                GridView3.DataSource = Teams.AsQueryable().ToList();
+                GridView3.DataBind();
+                GridView4.DataSource = Teams.AsQueryable().ToList();
+                GridView4.DataBind();
+
+                GridView5.DataSource = Teams2.AsQueryable().ToList();
+                GridView5.DataBind();
+                GridView6.DataSource = Teams2.AsQueryable().ToList();
+                GridView6.DataBind();
+                GridView7.DataSource = Teams2.AsQueryable().ToList();
+                GridView7.DataBind();
+                GridView8.DataSource = Teams2.AsQueryable().ToList();
+                GridView8.DataBind();
+
                 // query the Students Table using EF and LINQ
                 var Students = (from allStudents in db.teams
                                 select allStudents);
-                
-                // bind the result to the GridView
-                teamsGridView.DataSource = Students.AsQueryable().ToList();
-                teamsGridView.DataBind();
-                //teamsGridView1.DataSource = Students.AsQueryable().ToList();
-                //teamsGridView1.DataBind();
+
+
             }
         }
 
-        /**
-         * <summary>
-         * This event handler allows pagination to occur for the Students page
-         * </summary>
-         * 
-         * @method StudentsGridView_PageIndexChanging
-         * @param {object} sender
-         * @param {GridViewPageEventArgs} e
-         * @returns {void}
-         */
-        protected void teamsGridView_PageIndexChanging(object sender, GridViewPageEventArgs e)
-        {
-            // Set the new page number
-            teamsGridView.PageIndex = e.NewPageIndex;
-
-            // refresh the grid
-            this.GetStudents();
-        }
-
-        protected void StudentsGridView_Sorting(object sender, GridViewSortEventArgs e)
-        {
-            // get the column to sorty by
-            Session["SortColumn"] = e.SortExpression;
-
-            // Refresh the Grid
-            this.GetStudents();
-
-            // toggle the direction
-            Session["SortDirection"] = Session["SortDirection"].ToString() == "ASC" ? "DESC" : "ASC";
-        }
-
-        protected void StudentsGridView_RowDataBound(object sender, GridViewRowEventArgs e)
-        {
-            if (IsPostBack)
-            {
-                if (e.Row.RowType == DataControlRowType.Header) // if header row has been clicked
-                {
-                    LinkButton linkbutton = new LinkButton();
-
-                    for (int index = 0; index < teamsGridView.Columns.Count - 1; index++)
-                    {
-                        if (teamsGridView.Columns[index].SortExpression == Session["SortColumn"].ToString())
-                        {
-                            if (Session["SortDirection"].ToString() == "ASC")
-                            {
-                                linkbutton.Text = " <i class='fa fa-caret-up fa-lg'></i>";
-                            }
-                            else
-                            {
-                                linkbutton.Text = " <i class='fa fa-caret-down fa-lg'></i>";
-                            }
-
-                            e.Row.Cells[index].Controls.Add(linkbutton);
-                        }
-                    }
-                }
-            }
-        }
     }
-}
+
+    /**
+     * <summary>
+     * This event handler allows pagination to occur for the Students page
+     * </summary>
+     * 
+     * @method StudentsGridView_PageIndexChanging
+     * @param {object} sender
+     * @param {GridViewPageEventArgs} e
+     * @returns {void}
+     */
+    
+    }
