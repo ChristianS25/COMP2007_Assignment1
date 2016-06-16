@@ -38,3 +38,7 @@ C:\Users\rob\Source\Repos\COMP2007_Assignment1\CR-Assignment1\bin\Microsoft.Code
 C:\Users\rob\Source\Repos\COMP2007_Assignment1\CR-Assignment1\obj\Debug\CR-Assignment1.csprojResolveAssemblyReference.cache
 C:\Users\rob\Source\Repos\COMP2007_Assignment1\CR-Assignment1\obj\Debug\CR-Assignment1.dll
 C:\Users\rob\Source\Repos\COMP2007_Assignment1\CR-Assignment1\obj\Debug\CR-Assignment1.pdb
+C:\Users\rob\Source\Repos\COMP2007_Assignment1\CR-Assignment1\bin\EntityFramework.dll
+C:\Users\rob\Source\Repos\COMP2007_Assignment1\CR-Assignment1\bin\EntityFramework.SqlServer.dll
+C:\Users\rob\Source\Repos\COMP2007_Assignment1\CR-Assignment1\bin\EntityFramework.xml
+C:\Users\rob\Source\Repos\COMP2007_Assignment1\CR-Assignment1\bin\EntityFramework.SqlServer.xml

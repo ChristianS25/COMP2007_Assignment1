@@ -81,6 +81,24 @@
                 </ul>
             </div> 
         </div>
+        
+                <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
+                    ID="teamsGridView" AutoGenerateColumns="false" DataKeyNames="team_id"
+                    AllowPaging="true" PageSize="3"
+                    OnPageIndexChanging="teamsGridView_PageIndexChanging" 
+                    PagerStyle-CssClass="pagination-ys">
+                    <Columns>
+                        <asp:BoundField DataField="team_id" HeaderText="Team ID" Visible="true" SortExpression="team_id" />
+                        <asp:BoundField DataField="team_name" HeaderText="Team Name" Visible="true" SortExpression="team_name" />
+                        <asp:BoundField DataField="team_wins" HeaderText="Wins" Visible="true" SortExpression="team_wins" />
+                        <asp:BoundField DataField="team_losses" HeaderText="Losses" Visible="true" SortExpression="team_losses" />
+                        <asp:BoundField DataField="team_rank" HeaderText="Rank" Visible="true" SortExpression="team_rank" />
+                        <asp:BoundField DataField="team_number_of_games" HeaderText="# of Games" Visible="true" SortExpression="team_number_of_games" />
+                        <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit" 
+                            NavigateUrl="~/Sport1.aspx.cs" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server"
+                            DataNavigateUrlFields="team_id" DataNavigateUrlFormatString="Sport1.aspx?team_id={0}" />
+                        </Columns>
+                </asp:GridView>
     </div>
     
 </asp:Content>
