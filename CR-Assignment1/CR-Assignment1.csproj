@@ -80,9 +80,15 @@
     <Content Include="Assets\csgo.png" />
     <Content Include="Assets\epsilon.png" />
     <Content Include="Assets\fnatic.png" />
+    <Content Include="Assets\heroes.png" />
+    <Content Include="Assets\immortals.png" />
+    <Content Include="Assets\league.png" />
     <Content Include="Assets\Logo.png" />
     <Content Include="Assets\luminosity.png" />
+    <Content Include="Assets\monkey.png" />
+    <Content Include="Assets\mvp.png" />
     <Content Include="Assets\overwatch.png" />
+    <Content Include="Assets\snake.png" />
     <Content Include="content\app.css" />
     <Content Include="content\bootstrap-theme.css" />
     <Content Include="content\bootstrap-theme.min.css" />
