@@ -40,11 +40,11 @@ namespace CR_Assignment1
 
                 // query the Teams Table using EF and LINQ
                 var Teams = (from allTeams in db.teams
-                             where allTeams.team_id == 1
+                             where allTeams.team_id == 7
                              select allTeams);
 
                 var Teams2 = (from allTeams in db.teams
-                              where allTeams.team_id == 2
+                              where allTeams.team_id == 8
                               select allTeams);
 
                 // bind the result to the GridView

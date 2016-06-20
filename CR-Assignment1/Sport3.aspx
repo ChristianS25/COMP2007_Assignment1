@@ -20,16 +20,14 @@
         <div class="col-md-6 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team Fnatic Members</div>
+             <div class="panel-heading">Team Immortals Members</div>
                 <!-- List group -->
                 <ul class="list-group">
-                    <li class="list-group-item">JW</li>
-                    <li class="list-group-item">Flusha</li>
-                    <li class="list-group-item">KRiMZ</li>
-                    <li class="list-group-item">Olofmeister</li>
-                    <li class="list-group-item">Dennis</li>
-                    <li class="list-group-item">Plesson</li>
-                    <li class="list-group-item">Wenton</li>
+                    <li class="list-group-item">Huni</li>
+                    <li class="list-group-item">Reignover</li>
+                    <li class="list-group-item">Pobether</li>
+                    <li class="list-group-item">Wild Turtle</li>
+                    <li class="list-group-item">Adrian</li>
                 </ul>
             </div> 
         </div>
@@ -37,7 +35,7 @@
        <div class="col-md-2 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team Fnatic Scores</div>
+             <div class="panel-heading">Team Immortals Scores</div>
                 <!-- List group -->                
                <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                     ID="GridView1" AutoGenerateColumns="false" DataKeyNames="team_id"
@@ -89,15 +87,14 @@
         <div class="col-md-6 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team Epsilon Members</div>
+             <div class="panel-heading">Team Snake Members</div>
                 <!-- List group -->
                 <ul class="list-group">
-                    <li class="list-group-item">Draken</li>
-                    <li class="list-group-item">MorkEn</li>
-                    <li class="list-group-item">REZ</li>
-                    <li class="list-group-item">FreddieB</li>
-                    <li class="list-group-item">Disco Doplan</li>
-                    <li class="list-group-item">Xelos</li>
+                    <li class="list-group-item">Flandre</li>
+                    <li class="list-group-item">Copy</li>
+                    <li class="list-group-item">Reborn</li>
+                    <li class="list-group-item">Krystal</li>
+                    <li class="list-group-item">CoLiN</li>
                 </ul>
             </div> 
         </div>
@@ -105,7 +102,7 @@
        <div class="col-md-2 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team Epsilon Scores</div>
+             <div class="panel-heading">Team Snake Scores</div>
                 <!-- List group -->                
                <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                     ID="GridView5" AutoGenerateColumns="false" DataKeyNames="team_id"

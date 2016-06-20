@@ -20,16 +20,14 @@
         <div class="col-md-6 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team Fnatic Members</div>
+             <div class="panel-heading">Team Monkey Members</div>
                 <!-- List group -->
                 <ul class="list-group">
-                    <li class="list-group-item">JW</li>
-                    <li class="list-group-item">Flusha</li>
-                    <li class="list-group-item">KRiMZ</li>
-                    <li class="list-group-item">Olofmeister</li>
-                    <li class="list-group-item">Dennis</li>
-                    <li class="list-group-item">Plesson</li>
-                    <li class="list-group-item">Wenton</li>
+                    <li class="list-group-item">Pheilox</li>
+                    <li class="list-group-item">Crossby</li>
+                    <li class="list-group-item">BadBenny</li>
+                    <li class="list-group-item">Jowe</li>
+                    <li class="list-group-item">Aard</li>
                 </ul>
             </div> 
         </div>
@@ -37,7 +35,7 @@
        <div class="col-md-2 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team Fnatic Scores</div>
+             <div class="panel-heading">Team Monkey Scores</div>
                 <!-- List group -->                
                <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                     ID="GridView1" AutoGenerateColumns="false" DataKeyNames="team_id"
@@ -89,15 +87,14 @@
         <div class="col-md-6 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team Epsilon Members</div>
+             <div class="panel-heading">Team MVP Black Members</div>
                 <!-- List group -->
                 <ul class="list-group">
-                    <li class="list-group-item">Draken</li>
-                    <li class="list-group-item">MorkEn</li>
-                    <li class="list-group-item">REZ</li>
-                    <li class="list-group-item">FreddieB</li>
-                    <li class="list-group-item">Disco Doplan</li>
-                    <li class="list-group-item">Xelos</li>
+                    <li class="list-group-item">Sake</li>
+                    <li class="list-group-item">MerryDay</li>
+                    <li class="list-group-item">KyoCha</li>
+                    <li class="list-group-item">Sign</li>
+                    <li class="list-group-item">Rich</li>
                 </ul>
             </div> 
         </div>
