@@ -8,7 +8,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <div class="col-md-10 col-md-offset-2">
+        <div class="col-md-8 col-md-offset-3">
             <img src="/Assets/overwatch.png" />
         </div>
         
