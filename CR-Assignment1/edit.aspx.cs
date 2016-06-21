@@ -74,6 +74,8 @@ namespace CR_Assignment1
                 }
 
                 // add form data to the new student record
+                newTeam.team_name = "YOLO";
+                newTeam.team_week_number = 9;
                 newTeam.team_wins = Convert.ToInt32(WinsTextBox.Text);
                 newTeam.team_losses= Convert.ToInt32(LossesTextBox.Text);
                 newTeam.team_rank = Convert.ToInt32(RankTextBox.Text);
@@ -88,7 +90,14 @@ namespace CR_Assignment1
 
 
                 // save our changes - also updates and inserts
-                db.SaveChanges();
+                try {
+                    db.SaveChanges();
+                }
+                catch(Exception err)
+                {
+
+                    Console.WriteLine(err);
+                }
 
                 // Redirect back to the updated students page
                 Response.Redirect("~/Default.aspx");

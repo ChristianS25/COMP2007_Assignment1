@@ -7,7 +7,7 @@
     -->
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <div class="container">
      <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                     ID="GridView4" AutoGenerateColumns="false" DataKeyNames="team_id"
                     AllowPaging="true" PageSize="3" 
@@ -24,4 +24,5 @@
                             DataNavigateUrlFields="team_id" DataNavigateUrlFormatString="edit.aspx?team_id={0}" />
                     </Columns>
                 </asp:GridView>
+      </div>
 </asp:Content>
