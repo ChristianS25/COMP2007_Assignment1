@@ -19,7 +19,7 @@
         <div class="col-md-6 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team Cloud9 Members</div>
+             <div class="panel-heading"><a href="Team1.aspx">Cloud9 Members</a></div>
                 <!-- List group -->
                 <ul class="list-group">
                     <li class="list-group-item">Adam Eckel</li>
