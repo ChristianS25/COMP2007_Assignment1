@@ -20,7 +20,7 @@
         <div class="col-md-6 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team Monkey Members</div>
+             <div class="panel-heading"><a href="Team7.aspx" >The Sandwich Monkey</a> - Members</div>
                 <!-- List group -->
                 <ul class="list-group">
                     <li class="list-group-item">Pheilox</li>
@@ -87,7 +87,7 @@
         <div class="col-md-6 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team MVP Black Members</div>
+             <div class="panel-heading"><a href="Team8.aspx">MVP Black</a> - Members</div>
                 <!-- List group -->
                 <ul class="list-group">
                     <li class="list-group-item">Sake</li>

@@ -19,7 +19,7 @@
         <div class="col-md-6 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading"><a href="Team1.aspx">Cloud9 Members</a></div>
+             <div class="panel-heading"><a href="Team1.aspx">Cloud9</a> - Members</div>
                 <!-- List group -->
                 <ul class="list-group">
                     <li class="list-group-item">Adam Eckel</li>
@@ -87,7 +87,7 @@
         <div class="col-md-6 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team Lumosity Members</div>
+             <div class="panel-heading"><a href="Team2.aspx">Luminosity</a> - Members</div>
                 <!-- List group -->
                 <ul class="list-group">
                     <li class="list-group-item">EnigmaOW</li>

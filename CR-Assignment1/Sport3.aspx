@@ -20,7 +20,7 @@
         <div class="col-md-6 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team Immortals Members</div>
+             <div class="panel-heading"><a href="Team5.aspx" >Immortals</a> - Members</div>
                 <!-- List group -->
                 <ul class="list-group">
                     <li class="list-group-item">Huni</li>
@@ -87,7 +87,7 @@
         <div class="col-md-6 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team Snake Members</div>
+             <div class="panel-heading"><a href="Team6.aspx" >Snake</a> - Members</div>
                 <!-- List group -->
                 <ul class="list-group">
                     <li class="list-group-item">Flandre</li>
