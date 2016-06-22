@@ -21,5 +21,7 @@ namespace CR_Assignment1.models
         public Nullable<int> team_rank { get; set; }
         public Nullable<int> team_number_of_games { get; set; }
         public Nullable<int> team_week_number { get; set; }
+        public string team_oponent { get; set; }
+        public Nullable<int> team_oponent_wins { get; set; }
     }
 }

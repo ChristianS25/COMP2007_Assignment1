@@ -19,9 +19,11 @@
         </div>
 
         <div class="col-md-10 well well-lg">
+            <div class="panel panel-default panel-body">
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                This site will track 4 E-Sports games and show their latest scores on the main sports page. Each sports page will have a link to the individual teams to be bale to see a more in depth version of the information.
             </p>
+            </div>
         </div>
 
        <div class="col-md-10 well well-lg">

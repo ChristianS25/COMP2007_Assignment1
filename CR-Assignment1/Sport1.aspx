@@ -35,7 +35,7 @@
        <div class="col-md-2 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team Cloud9 Scores</div>
+             <div class="panel-heading">Cloud9 Latest Week Scores</div>
                 <!-- List group -->                
                <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                     ID="GridView1" AutoGenerateColumns="false" DataKeyNames="team_id"
@@ -103,7 +103,7 @@
        <div class="col-md-2 col-md-offset-1 well">
              <div class="panel panel-default">
              <!-- Default panel contents -->
-             <div class="panel-heading">Team Cloud9 Scores</div>
+             <div class="panel-heading">Luminosity Latest Week Scores</div>
                 <!-- List group -->                
                <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                     ID="GridView5" AutoGenerateColumns="false" DataKeyNames="team_id"

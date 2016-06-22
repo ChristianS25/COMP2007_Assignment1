@@ -19,8 +19,8 @@ namespace CR_Assignment1
             // if loading the page for the first time, populate the student grid
             if (!IsPostBack)
             {
-                Session["SortColumn"] = "StudentID"; // default sort column
-                Session["SortDirection"] = "ASC";
+                //Session["SortColumn"] = "StudentID"; // default sort column
+                //Session["SortDirection"] = "ASC";
                 // Get the student data
                 this.GetTeams();
             }
@@ -31,7 +31,7 @@ namespace CR_Assignment1
          * This method gets the student data from the DB
          * </summary>
          * 
-         * @method GetStudents
+         * @method GetTeams
          * @returns {void}
          */
         protected void GetTeams()
@@ -39,16 +39,16 @@ namespace CR_Assignment1
             // connect to EF
             using (TeamConnection db = new TeamConnection())
             {
-                string SortString = Session["SortColumn"].ToString() + " " + Session["SortDirection"].ToString();
+                //string SortString = Session["SortColumn"].ToString() + " " + Session["SortDirection"].ToString();
 
 
                 // query the Teams Table using EF and LINQ
                 var Teams = (from allTeams in db.teams
-                             where allTeams.team_id == 1
-                             select allTeams);
+                             where allTeams.team_name == "Cloud9" & allTeams.team_week_number == 4
+                             select allTeams );
 
                 var Teams2 = (from allTeams in db.teams
-                              where allTeams.team_id == 2
+                              where allTeams.team_name == "Luminosity" & allTeams.team_week_number == 4
                               select allTeams);
 
                 // bind the result to the GridView

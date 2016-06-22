@@ -17,8 +17,8 @@ namespace CR_Assignment1
             // if loading the page for the first time, populate the student grid
             if (!IsPostBack)
             {
-                Session["SortColumn"] = "StudentID"; // default sort column
-                Session["SortDirection"] = "ASC";
+                //Session["SortColumn"] = "StudentID"; // default sort column
+                //Session["SortDirection"] = "ASC";
                 // Get the student data
                 this.GetTeams();
             }
@@ -37,7 +37,7 @@ namespace CR_Assignment1
             // connect to EF
             using (TeamConnection db = new TeamConnection())
             {
-                string SortString = Session["SortColumn"].ToString() + " " + Session["SortDirection"].ToString();
+                //string SortString = Session["SortColumn"].ToString() + " " + Session["SortDirection"].ToString();
 
 
                 // query the Teams Table using EF and LINQ

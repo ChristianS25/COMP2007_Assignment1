@@ -4,14 +4,16 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="TeamsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="TeamsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="teams">
           <Key>
             <PropertyRef Name="team_id" />
           </Key>
-          <Property Name="team_id" Type="int" Nullable="false" />
+          <Property Name="team_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="team_name" Type="varchar" MaxLength="45" />
+          <Property Name="team_oponent" Type="varchar" MaxLength="45" />
           <Property Name="team_wins" Type="int" />
+          <Property Name="team_oponent_wins" Type="int" />
           <Property Name="team_losses" Type="int" />
           <Property Name="team_rank" Type="int" />
           <Property Name="team_number_of_games" Type="int" />
@@ -20,8 +22,7 @@
         <EntityContainer Name="TeamsModelStoreContainer">
           <EntitySet Name="teams" EntityType="Self.teams" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="TeamsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -36,6 +37,8 @@
           <Property Name="team_rank" Type="Int32" />
           <Property Name="team_number_of_games" Type="Int32" />
           <Property Name="team_week_number" Type="Int32" />
+          <Property Name="team_oponent" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="team_oponent_wins" Type="Int32" />
         </EntityType>
         <EntityContainer Name="DefaultConnection" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="teams" EntityType="Self.team" />
@@ -49,6 +52,8 @@
           <EntitySetMapping Name="teams">
             <EntityTypeMapping TypeName="TeamsModel.team">
               <MappingFragment StoreEntitySet="teams">
+                <ScalarProperty Name="team_oponent_wins" ColumnName="team_oponent_wins" />
+                <ScalarProperty Name="team_oponent" ColumnName="team_oponent" />
                 <ScalarProperty Name="team_id" ColumnName="team_id" />
                 <ScalarProperty Name="team_name" ColumnName="team_name" />
                 <ScalarProperty Name="team_wins" ColumnName="team_wins" />
