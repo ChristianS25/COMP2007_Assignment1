@@ -13,10 +13,10 @@ namespace CR_Assignment1.models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DefaultConnection : DbContext
+    public partial class TeamConnection : DbContext
     {
-        public DefaultConnection()
-            : base("name=DefaultConnection")
+        public TeamConnection()
+            : base("name=TeamConnection")
         {
         }
     

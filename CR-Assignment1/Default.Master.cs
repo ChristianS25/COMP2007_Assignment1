@@ -13,5 +13,33 @@ namespace CR_Assignment1
         {
 
         }
+
+        private void SetActivePage()
+        {
+            switch (Page.Title)
+            {
+                case "Home":
+                    home.Attributes.Add("class", "active");
+                    break;
+                case "Sport1":
+                    sport1.Attributes.Add("class", "active");
+                    break;
+                case "Sport2":
+                    sport2.Attributes.Add("class", "active");
+                    break;
+                case "Sport3":
+                    sport3.Attributes.Add("class", "active");
+                    break;
+                case "Sport4":
+                    sport4.Attributes.Add("class", "active");
+                    break;
+                case "Register":
+                    register.Attributes.Add("class", "active");
+                    break;
+                case "Login":
+                    login.Attributes.Add("class", "active");
+                    break;
+            }
+        }
     }
 }

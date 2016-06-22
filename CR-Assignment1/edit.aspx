@@ -10,19 +10,19 @@
                 <br />
                 <div class="form-group">
                     <label class="control-label" for="WinsTextBox">Wins</label>
-                    <asp:TextBox runat="server" textmode="Number" CssClass="form-control" ID="WinsTextBox" placeholder="0" required="true"></asp:TextBox>
+                    <asp:TextBox runat="server" textmode="Number" CssClass="form-control" ID="WinsTextBox" placeholder="Enter a number of wins" required="true"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="LossesTextBox">Losses</label>
-                    <asp:TextBox runat="server" textmode="Number" CssClass="form-control" ID="LossesTextBox" placeholder="0" required="true"></asp:TextBox>
+                    <asp:TextBox runat="server" textmode="Number" CssClass="form-control" ID="LossesTextBox" placeholder="Enter a number of losses" required="true"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="RankTextBox">Rank</label>
-                    <asp:TextBox runat="server" textmode="Number" CssClass="form-control" ID="RankTextBox" placeholder="0" required="true"></asp:TextBox>
+                    <asp:TextBox runat="server" textmode="Number" CssClass="form-control" ID="RankTextBox" placeholder="Enter a number for rank" required="true"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="NumberofGamesTextBox">Number of Games</label>
-                    <asp:TextBox runat="server" textmode="Number" CssClass="form-control" ID="NumberofGamesTextBox" placeholder="0" required="true"></asp:TextBox>
+                    <asp:TextBox runat="server" textmode="Number" CssClass="form-control" ID="NumberofGamesTextBox" placeholder="Enter a number of games" required="true"></asp:TextBox>
                 </div>
                 <div class="text-right">
                     <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-warning btn-lg" runat="server" 

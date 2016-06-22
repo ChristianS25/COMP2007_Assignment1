@@ -38,12 +38,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li id="default" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
+        <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
         <li id="sport1" runat="server"><a href="Sport1.aspx"><i class="fa fa-gamepad fa-lg"></i> Overwatch</a></li>
         <li id="sport2" runat="server"><a href="Sport2.aspx"><i class="fa fa-crosshairs fa-lg"></i> CS:GO</a></li>      
         <li id="sport3" runat="server"><a href="Sport3.aspx"><i class="fa fa-keyboard-o fa-lg"></i> League of Legends</a></li>
         <li id="sport4" runat="server"><a href="Sport4.aspx"><i class="fa fa-mouse-pointer fa-lg"></i> Heroes of The Storm</a></li>
         <li id="login" runat="server"><a href="Login.aspx"><i class="fa fa-sign-in fa-lg"></i> Sign In</a></li>
+        <li id="Logout" runat="server"><a href="Logout.aspx"><i class="fa fa-sign-in fa-lg"></i> Sign Out</a></li>
+        <li id="register" runat="server"><a href="Register.aspx"><i class="fa fa-sign-in fa-lg"></i> Register</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

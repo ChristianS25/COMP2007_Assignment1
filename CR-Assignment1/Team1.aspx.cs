@@ -35,7 +35,7 @@ namespace CR_Assignment1
         protected void GetTeams()
         {
             // connect to EF
-            using (DefaultConnection db = new DefaultConnection())
+            using (TeamConnection db = new TeamConnection())
             {
                 string SortString = Session["SortColumn"].ToString() + " " + Session["SortDirection"].ToString();
 

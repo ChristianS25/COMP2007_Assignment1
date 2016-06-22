@@ -27,7 +27,7 @@ namespace CR_Assignment1
             int TeamID = Convert.ToInt32(Request.QueryString["team_id"]);
 
             // connect to the EF DB
-            using (DefaultConnection db = new DefaultConnection())
+            using (TeamConnection db = new TeamConnection())
             {
                 // populate a student object instance with the StudentID from the URL Parameter
                 team updatedTeam = (from teams in db.teams
@@ -54,7 +54,7 @@ namespace CR_Assignment1
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             // Use EF to connect to the server
-            using (DefaultConnection db = new DefaultConnection())
+            using (TeamConnection db = new TeamConnection())
             {
                 // use the Student model to create a new student object and
                 // save a new record
@@ -74,8 +74,6 @@ namespace CR_Assignment1
                 }
 
                 // add form data to the new student record
-                newTeam.team_name = "YOLO";
-                newTeam.team_week_number = 9;
                 newTeam.team_wins = Convert.ToInt32(WinsTextBox.Text);
                 newTeam.team_losses= Convert.ToInt32(LossesTextBox.Text);
                 newTeam.team_rank = Convert.ToInt32(RankTextBox.Text);
