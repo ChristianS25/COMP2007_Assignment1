@@ -25,7 +25,7 @@
                     <asp:TextBox runat="server" textmode="Number" CssClass="form-control" ID="NumberofGamesTextBox" placeholder="Enter a number of games" required="true"></asp:TextBox>
                 </div>
                 <div class="text-right">
-                    <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-warning btn-lg" runat="server" 
+                    <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-danger btn-lg" runat="server" 
                         UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click" />
                     <asp:Button Text="Save" ID="SaveButton" CssClass="btn btn-primary btn-lg" runat="server" OnClick="SaveButton_Click" />
                 </div>
